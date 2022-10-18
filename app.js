@@ -93,8 +93,8 @@ let value = Math.round((Math.random() * 500)); // creates a random number betwee
 let n = Math.round(Math.random() * (500 - 100) + 100); // creates a random number between 100 and 500
 
 for (let i = 0; i <= n; i++) {
-    if (i == value) {
-        console.log("Found value!");
+    if (i === value) {
+        console.log(`Found value! ${value}`);
         break;
     }   
 };
@@ -102,3 +102,7 @@ for (let i = 0; i <= n; i++) {
 if (value>n) {
     console.log("Did not find value");
 };
+
+
+
+
